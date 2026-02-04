@@ -51,6 +51,17 @@ public class LinkedList {
         throw new IndexOutOfBoundsException("Index mimo rozsah");
     }
 
+    public int getIndexByValue(int value) {
+        Node link = first;
+        int i = 0;
+        while (link != null) {
+            if (link.getValue() == value) return i;
+            link = link.getNext();
+            i++;
+        }
+        return -1;
+    }
+
     public int getValueByIndex(int index) {
         Node link = first;
         int count = 0;
