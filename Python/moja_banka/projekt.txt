@@ -1,0 +1,7 @@
+Moja banka - s databazou v jave aj v pythone + web
+
+Projekt:
+    - Trieda:   Ucet
+                majitel
+                cislo
+                zostatok
