@@ -1,0 +1,97 @@
+####################################
+# OS / System files
+####################################
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+####################################
+# Logs & temp files
+####################################
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.orig
+
+####################################
+# Python
+####################################
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Packaging / build
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+####################################
+# Java
+####################################
+*.class
+
+# JVM crash logs
+hs_err_pid*
+
+# Build tools
+target/          # Maven
+out/             # IntelliJ / generic
+bin/             # Eclipse
+.gradle/
+build/           # Gradle
+
+####################################
+# IDEs
+####################################
+
+# IntelliJ IDEA / PyCharm
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# NetBeans
+nbproject/
+nbbuild/
+dist/
+nbdist/
+
+####################################
+# Misc
+####################################
+*.jar
+*.war
+*.ear
+
+####################################
+# Environment & secrets
+####################################
+.env
+.env.*
