@@ -1,0 +1,10 @@
+public class TestTreeSort {
+
+    public static void main(String[] args) {
+        TreeSort treeSort = new TreeSort();
+        System.out.println(treeSort);
+        treeSort.put(7);
+        System.out.println(treeSort);
+        treeSort.put(3);
+    }
+}
