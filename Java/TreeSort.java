@@ -1,5 +1,3 @@
-import sun.font.TrueTypeFont;
-
 public class TreeSort {
 
     NodeT root;
@@ -23,6 +21,15 @@ public class TreeSort {
             while (true) {
                 if (value < link.getValue()) {
                     if (link.getRight() == null) {
+                        link.setRight(node);
+                        break;
+                    } else {
+                        link = link.getRight();
+                    }
+                } else {
+                    if (link.getLeft() == null) {
+                        link.setLeft(node);
+                        break;
                     } else {
                         link = link.getRight();
                     }
