@@ -36,4 +36,20 @@ public class TreeSort {
             }
         }
     }
+
+    private String getVetva(NodeT node) {
+        if (node == null) {
+            return "";
+        }
+
+        String vysledok = getVetva(node.getLeft());
+        vysledok += node.getValue() + " ";
+        vysledok += getVetva(node.getRight());
+
+        return vysledok;
+    }
+
+    public String get() {
+        return "[" + getVetva(root) + "]";
+    }
 }

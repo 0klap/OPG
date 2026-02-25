@@ -17,5 +17,7 @@ public class TestTreeSort {
         System.out.println(treeSort);
         treeSort.put(2);
         System.out.println(treeSort);
+
+        System.out.println(treeSort.get());
     }
 }
