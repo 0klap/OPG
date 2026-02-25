@@ -8,7 +8,7 @@ public class TreeSort {
 
     @Override
     public String toString() {
-        return "TreeSort [root=" + root + "]";
+        return "TreeSort{" + "root=" + root + '}';
     }
 
     public void put(int value) {
@@ -17,7 +17,6 @@ public class TreeSort {
             root = node;
         } else {
             NodeT link = root;
-
             while (true) {
                 if (value < link.getValue()) {
                     if (link.getLeft() == null) {
@@ -34,12 +33,6 @@ public class TreeSort {
                         link = link.getRight();
                     }
                 }
-            }
-
-            if (value < root.getValue()) {
-                root.setLeft(node);
-            } else {
-                root.setRight(node);
             }
         }
     }
